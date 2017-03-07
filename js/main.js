@@ -329,17 +329,6 @@ maintenanceCheck();
 
 }); 
 
-//a white list from the public service and the exchange 
-// xml filte// public services network 
-//security advisor = andy moris 
-/**
- * Spoke to Andrews Richard about the security side of the application,
- * he suggested that the best way to address the security aspect of the application is
- * to have google maps api added on a whitelist on the CPS network which 
- * would only allow specific data into the network instead of having sensitive data taken out 
- * and onto the public network. 
- * 
- */
 
   element[0].addListener('click', function(event) {
       //      var myHTML = event.feature.getProperty("Name");
