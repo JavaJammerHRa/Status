@@ -1,0 +1,26 @@
+{
+  "name": "status",
+  "version": "1.0.0",
+  "description": "Police department status",
+  "main": "index.html",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JavaJammerHRa/Status.git"
+  },
+  "keywords": [
+    "status"
+  ],
+  "author": "Hamayon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JavaJammerHRa/Status/issues"
+  },
+  "homepage": "https://github.com/JavaJammerHRa/Status#readme"
+}
