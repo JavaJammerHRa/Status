@@ -27,10 +27,429 @@
 
   function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 51.52, lng: -0.13},
-          zoom: 7,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
+          center: {lat: 53.19, lng: -2.00},
+          zoom: 6,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          panControl: true,
+          zoomControl: true,
+          mapTypeControl: false,
+          scaleControl: true,
+          streetViewControl: false,
+          overviewMapControl: true,
+          rotateControl: true,
+          styles: [
+  {
+    elementType: 'geometry',
+    stylers: [
+      {
+        color: '#212121'
+      }
+    ]
+  },
+  {
+    elementType: 'labels.icon',
+    stylers: [
+      {
+        visibility: 'off'
+      }
+    ]
+  },
+  {
+    elementType: 'labels.text.fill',
+    stylers: [
+      {
+        color: '#757575'
+      }
+    ]
+  },
+  {
+    elementType: 'labels.text.stroke',
+    stylers: [
+      {
+        color: '#212121'
+      }
+    ]
+  },
+  {
+    featureType: 'administrative',
+    elementType: 'geometry',
+    stylers: [
+      {
+        color: '#757575'
+      }
+    ]
+  },
+  {
+    featureType: 'administrative.country',
+    elementType: 'labels.text.fill',
+    stylers: [
+      {
+        color: '#9e9e9e'
+      }
+    ]
+  },
+  {
+    featureType: 'administrative.locality',
+    elementType: 'labels.text.fill',
+    stylers: [
+      {
+        color: '#bdbdbd'
+      }
+    ]
+  },
+  {
+    featureType: 'poi',
+    elementType: 'labels.text.fill',
+    stylers: [
+      {
+        color: '#757575'
+      }
+    ]
+  },
+  {
+    featureType: 'poi.park',
+    elementType: 'geometry',
+    stylers: [
+      {
+        color: '#181818'
+      }
+    ]
+  },
+  {
+    featureType: 'poi.park',
+    elementType: 'labels.text.fill',
+    stylers: [
+      {
+      color: '#616161'
+      }
+    ]
+  },
+  {
+    featureType: 'poi.park',
+    elementType: 'labels.text.stroke',
+    stylers: [
+      {
+        color: '#1b1b1b'
+      }
+    ]
+  },
+  {
+    featureType: 'road',
+    elementType: 'geometry.fill',
+    stylers: [
+      {
+        color: '#2c2c2c'
+      }
+    ]
+  },
+  {
+    featureType: 'road',
+    elementType: 'labels.text.fill',
+    stylers: [
+      {
+        color: '#8a8a8a'
+      }
+    ]
+  },
+  {
+    featureType: 'road.arterial',
+    elementType: 'geometry',
+    stylers: [
+      {
+        color: '#373737'
+      }
+    ]
+  },
+  {
+    featureType: 'road.arterial',
+    elementType: 'labels',
+    stylers: [
+      {
+        visibility: 'off'
+      }
+    ]
+  },
+  {
+    featureType: 'road.highway',
+    elementType: 'geometry',
+    stylers: [
+      {
+        color: '#3c3c3c'
+      }
+    ]
+  },
+  {
+    featureType: 'road.highway',
+    elementType: 'labels',
+    stylers: [
+      {
+        visibility: 'off'
+      }
+    ]
+  },
+  {
+    featureType: 'road.highway.controlled_access',
+    elementType: 'geometry',
+    stylers: [
+      {
+      color: '#4e4e4e'
+      }
+    ]
+  },
+  {
+    featureType: 'road.local',
+    stylers: [
+      {
+        visibility: 'off'
+      }
+    ]
+  },
+  {
+    featureType: 'road.local',
+    elementType: 'labels.text.fill',
+    stylers: [
+      {
+        color: '#616161'
+      }
+    ]
+  },
+  {
+    featureType: 'transit',
+    elementType: 'labels.text.fill',
+    stylers: [
+      {
+        color: '#757575'
+      }
+    ]
+  },
+  {
+    featureType: 'water',
+    elementType: 'geometry',
+    stylers: [
+      {
+        color: '#000000'
+      }
+    ]
+  },
+  {
+    featureType: 'water',
+    elementType: 'labels.text.fill',
+    stylers: [
+      {
+        color: '#3d3d3d'
+      }
+    ]
+  }
+]
   });
+
+// var myMapOptions  = [
+//   {
+//     elementType: 'geometry',
+//     stylers: [
+//       {
+//         color: '#212121'
+//       }
+//     ]
+//   },
+//   {
+//     elementType: 'labels.icon',
+//     stylers: [
+//       {
+//         visibility: 'off'
+//       }
+//     ]
+//   },
+//   {
+//     elementType: 'labels.text.fill',
+//     stylers: [
+//       {
+//         color: '#757575'
+//       }
+//     ]
+//   },
+//   {
+//     elementType: 'labels.text.stroke',
+//     stylers: [
+//       {
+//         color: '#212121'
+//       }
+//     ]
+//   },
+//   {
+//     featureType: 'administrative',
+//     elementType: 'geometry',
+//     stylers: [
+//       {
+//         color: '#757575'
+//       }
+//     ]
+//   },
+//   {
+//     featureType: 'administrative.country',
+//     elementType: 'labels.text.fill',
+//     stylers: [
+//       {
+//         color: '#9e9e9e'
+//       }
+//     ]
+//   },
+//   {
+//     featureType: 'administrative.locality',
+//     elementType: 'labels.text.fill',
+//     stylers: [
+//       {
+//         color: '#bdbdbd'
+//       }
+//     ]
+//   },
+//   {
+//     featureType: 'poi',
+//     elementType: 'labels.text.fill',
+//     stylers: [
+//       {
+//         color: '#757575'
+//       }
+//     ]
+//   },
+//   {
+//     featureType: 'poi.park',
+//     elementType: 'geometry',
+//     stylers: [
+//       {
+//         color: '#181818'
+//       }
+//     ]
+//   },
+//   {
+//     featureType: 'poi.park',
+//     elementType: 'labels.text.fill',
+//     stylers: [
+//       {
+//       color: '#616161'
+//       }
+//     ]
+//   },
+//   {
+//     featureType: 'poi.park',
+//     elementType: 'labels.text.stroke',
+//     stylers: [
+//       {
+//         color: '#1b1b1b'
+//       }
+//     ]
+//   },
+//   {
+//     featureType: 'road',
+//     elementType: 'geometry.fill',
+//     stylers: [
+//       {
+//         color: '#2c2c2c'
+//       }
+//     ]
+//   },
+//   {
+//     featureType: 'road',
+//     elementType: 'labels.text.fill',
+//     stylers: [
+//       {
+//         color: '#8a8a8a'
+//       }
+//     ]
+//   },
+//   {
+//     featureType: 'road.arterial',
+//     elementType: 'geometry',
+//     stylers: [
+//       {
+//         color: '#373737'
+//       }
+//     ]
+//   },
+//   {
+//     featureType: 'road.arterial',
+//     elementType: 'labels',
+//     stylers: [
+//       {
+//         visibility: 'off'
+//       }
+//     ]
+//   },
+//   {
+//     featureType: 'road.highway',
+//     elementType: 'geometry',
+//     stylers: [
+//       {
+//         color: '#3c3c3c'
+//       }
+//     ]
+//   },
+//   {
+//     featureType: 'road.highway',
+//     elementType: 'labels',
+//     stylers: [
+//       {
+//         visibility: 'off'
+//       }
+//     ]
+//   },
+//   {
+//     featureType: 'road.highway.controlled_access',
+//     elementType: 'geometry',
+//     stylers: [
+//       {
+//       color: '#4e4e4e'
+//       }
+//     ]
+//   },
+//   {
+//     featureType: 'road.local',
+//     stylers: [
+//       {
+//         visibility: 'off'
+//       }
+//     ]
+//   },
+//   {
+//     featureType: 'road.local',
+//     elementType: 'labels.text.fill',
+//     stylers: [
+//       {
+//         color: '#616161'
+//       }
+//     ]
+//   },
+//   {
+//     featureType: 'transit',
+//     elementType: 'labels.text.fill',
+//     stylers: [
+//       {
+//         color: '#757575'
+//       }
+//     ]
+//   },
+//   {
+//     featureType: 'water',
+//     elementType: 'geometry',
+//     stylers: [
+//       {
+//         color: '#000000'
+//       }
+//     ]
+//   },
+//   {
+//     featureType: 'water',
+//     elementType: 'labels.text.fill',
+//     stylers: [
+//       {
+//         color: '#3d3d3d'
+//       }
+//     ]
+//   }
+// ];
+
+
+// map.setOptions(myMapOptions);
 
 var avonsomerset = new google.maps.Data();
 var bedfordshire = new google.maps.Data();
@@ -124,50 +543,50 @@ wiltshire.loadGeoJson('http://localhost/status/data/wiltshire.geojson');
 
 
 arrayOfPoly.push(
-  [avonsomerset,"1","03:00","06/03/2017"],
-  [bedfordshire,"0","02:20","06/03/2017"],
-  [devon,"1","02:22","06/03/2017"],
-  [dorset,"1","03:11","07/03/2017"],
-  [hampshire,"1","02:31","23/03/2017"],
-  [cambridgeshire,"1","03:00","06/03/2017"],
-  [cheshire,"1","03:00","06/03/2017"],
-  [cityOfLondon,"1","03:00","06/03/2017"],
-  [cleveland,"1","03:00","06/03/2017"],
-  [cumbria,"1","03:00","06/03/2017"],
-  [derbyshire,"1","03:00","06/03/2017"],
-  [durham,"1","03:00","06/03/2017"],
-  [dyfedPowys,"1","03:00","06/03/2017"],
-  [essex,"1","03:00","06/03/2017"],
-  [gloucestershire,"1","03:00","06/03/2017"],
-  [greaterManchester,"1","03:00","06/03/2017"],
-  [gwent,"1","03:00","06/03/2017"],
-  [hertfordshire,"1","03:00","06/03/2017"],
-  [humberside,"1","03:00","06/03/2017"],
-  [kent,"1","03:00","06/03/2017"],
-  [lancashire,"1","03:00","06/03/2017"],
-  [leicestershire,"1","03:00","06/03/2017"],
-  [lincolnshire,"1","03:00","06/03/2017"],
-  [merseyside,"1","03:00","06/03/2017"],
-  [metropolitan,"1","03:00","06/03/2017"],
-  [norfolk,"1","03:00","06/03/2017"],
-  [northamptonshire,"1","03:00","06/03/2017"],
-  [northernIreland,"1","03:00","06/03/2017"],
-  [northumbria,"1","03:00","06/03/2017"],
-  [northWales,"1","03:00","06/03/2017"],
-  [northYorkshire,"1","03:00","06/03/2017"],
-  [nottinghamshire,"1","03:00","06/03/2017"],
-  [southWales,"1","03:00","06/03/2017"],
-  [southYorkshire,"1","03:00","06/03/2017"],
-  [staffordshire,"1","03:00","06/03/2017"],
-  [suffolk,"1","03:00","06/03/2017"],
-  [surrey,"1","03:00","06/03/2017"],
-  [sussex,"1","03:00","06/03/2017"],
-  [thamesValley,"0","03:00","06/03/2017"],
-  [warwickshire,"1","03:00","06/03/2017"],
-  [westMercia,"1","03:00","06/03/2017"],
-  [westMidlands,"1","03:00","06/03/2017"],
-  [westYorkshire,"1","03:00","06/03/2017"],
-  [wiltshire,"1","03:00","06/03/2017"]);
+  [avonsomerset,"1","03:00","13/03/2017","13","avon-somerset.jpg"],
+  [bedfordshire,"0","03:00","06/03/2017","27","bedfordshire.jpg"],
+  [devon,"1","02:22","06/03/2017","41","devon.jpg"],
+  [dorset,"1","03:11","13/03/2017","33","dorset.jpg"],
+  [hampshire,"1","02:31","23/03/2017","22","hampshire.png"],
+  [cambridgeshire,"1","03:00","06/03/2017","21","cambridgeshire.jpg"],
+  [cheshire,"1","03:00","06/03/2017","25","cheshire.jpg"],
+  [cityOfLondon,"1","03:00","06/03/2017","23","cityoflondon.png"],
+  [cleveland,"1","03:00","06/03/2017","11","cleveland.png"],
+  [cumbria,"1","03:00","06/03/2017","15","cumbria.png"],
+  [derbyshire,"1","03:00","06/03/2017","15","derbyshire.png"],
+  [durham,"1","03:00","06/03/2017","23","durham.jpg"],
+  [dyfedPowys,"1","03:00","13/03/2017","89","dyfed.jpg"],
+  [essex,"1","03:00","06/03/2017","26","essex.jpg"],
+  [gloucestershire,"1","03:00","06/03/2017","23","gloucestershire.gif"],
+  [greaterManchester,"1","03:00","06/03/2017","23","manchester.png"],
+  [gwent,"1","03:00","06/03/2017","23","gwent.jpg"],
+  [hertfordshire,"1","03:00","13/03/2017","23","hertfordshire.jpg"],
+  [humberside,"1","03:00","06/03/2017","23","humbria.png"],
+  [kent,"1","03:00","06/03/2017","23","kent.gif"],
+  [lancashire,"1","03:00","06/03/2017","23","lancashire.jpg"],
+  [leicestershire,"1","03:00","06/03/2017","23","leicestershire.jpg"],
+  [lincolnshire,"1","03:00","06/03/2017","23","lincolnshire.jpg"],
+  [merseyside,"1","03:00","06/03/2017","23","merseyside.jpg"],
+  [metropolitan,"1","03:00","14/03/2017","23","met.jpg"],
+  [norfolk,"1","03:00","06/03/2017","23","norfolk.png"],
+  [northamptonshire,"1","03:00","06/03/2017","23","northamptonshire.jpg"],
+  [northernIreland,"1","03:00","06/03/2017","23","northernIreland.gif"],
+  [northumbria,"1","03:00","06/03/2017","23","northumbria.png"],
+  [northWales,"1","03:00","06/03/2017","23","northwales.png"],
+  [northYorkshire,"1","03:00","06/03/2017","23","northYorkshire.png"],
+  [nottinghamshire,"1","03:00","06/03/2017","23","nottinghamshire.jpg"],
+  [southWales,"1","03:00","06/03/2017","23","southwales.jpg"],
+  [southYorkshire,"1","03:00","06/03/2017","23","southyorkshire.jpg"],
+  [staffordshire,"1","03:00","06/03/2017","23","staffordshire.jpg"],
+  [suffolk,"1","03:00","06/03/2017","23","suffolk.jpg"],
+  [surrey,"1","03:00","06/03/2017","23","surrey.png"],
+  [sussex,"1","03:00","06/03/2017","23","sussex.jpg"],
+  [thamesValley,"0","03:00","06/03/2017","23","thamesvalley.jpg"],
+  [warwickshire,"1","03:00","06/03/2017","23","warwickshire.jpg"],
+  [westMercia,"1","03:00","06/03/2017","23","westmercia.jpg"],
+  [westMidlands,"1","03:00","06/03/2017","23","westmidlands.jpg"],
+  [westYorkshire,"1","03:00","06/03/2017","23","westyorkshire.jpg"],
+  [wiltshire,"1","03:00","06/03/2017","23","wiltshire.jpg"]);
 
 
 
@@ -327,8 +746,13 @@ maintenanceCheck();
     }
   }
 
+    var name = event.feature.getProperty("Name");
+    $(document).ready(function (e) {
+    var $location = $("#location");
+    $location.html("<h1>More Detail</h1s>");
+    });
 }); 
-
+//
 
   element[0].addListener('click', function(event) {
       //      var myHTML = event.feature.getProperty("Name");
@@ -349,6 +773,8 @@ maintenanceCheck();
     var name = event.feature.getProperty("Name");
     var getState = element[1];
     var maintenance = element[3];
+    var messages = element[4];
+    var image = element[5];
 
     var state;
   if(element[1] == 1){
@@ -385,12 +811,29 @@ maintenanceCheck();
     "</div>"+
   "</div>"+
 "</div>";
+var statusColour = "danger";
+if(state == "ACTIVE"){
+  statusColour = "success";
+}else if(state == "MAINTENANCE"){
+  statusColour = "warning";
+}
 
-var panel = "<div class='panel panel-primary'>"+ 
-  "<div class='panel-heading'> <h2 class='panel-title'>"+name+"</h2>"+ 
+var pan2 = "<div class='text-center'>"+
+"<a href='#' class='list-group-item active'>"+
+   "<h3>" +name+"</h3></a></div>"+
+
+"   <a href='#' class='thumbnail'> <img  style='height: 200px; width: 200px; display: block;'" +
+  "src='logo/"+image+"' data-holder-rendered='true'> </a>"+
+  "<a href='#' class='list-group-item list-group-item-"+statusColour+"'><h4>"+state+":  <span class='badge' id='maintenance'>"+duration+"</span></h4></a>"+
+  "<a href='#' class='list-group-item list-group-item-info'><h4>Message Queue:  <span class='badge'>"+messages+"</span></h4></a>"+
+  "<a href='#' class='list-group-item list-group-item-warning'><h4>Maintenance:  <span class='badge'>"+maintenance+"</span></h4></a>"
+;
+var panel = "<div class='panel panel-"+panel+"'>"+ 
+  "<div class='panel-heading'> <h4 class='detailPanel'>"+name+"</h4>"+ 
   "</div>"+ 
 "<div class='panel-body'><h4>"+ state+': '+"<div id='maintenance'>"+duration+"</div></h4>"+
 "<h4>"+'Maintenance: '+maintenance +"</h4>"+
+"<span class='label label-primary'>"+state+"<span class='badge'>"+duration+"</span>"+"</span>"+
 "</div>"+ 
 "<div class='text-center'><a href='' class='btn btn-primary' role='button'>Refresh</a> <a href='' </a></div>"+
 "</div>";
@@ -399,8 +842,9 @@ var panel = "<div class='panel panel-primary'>"+
     // infowindow.setPosition(event.latLng);
     // infowindow.open(map);
    // upTime('jan,01,2018,00:00:00');
+   var al = "<div class='alert alert-danger' role='alert'>ALERT THE DEPARTMENT</div>";
 
-    showSideWindow(panel);
+    showSideWindow(pan2);
     $(document).ready(function (e) {
     var $worked = $("#maintenance");
 
@@ -418,6 +862,23 @@ var panel = "<div class='panel panel-primary'>"+
         
         $worked.html(ts[1]+":"+ts[2]);
         setTimeout(update, 1000);
+
+        if(state == "INACTIVE" && myTime == "03:03"){
+
+    $(document).ready(function (e) {
+    var $alertDiv = $("#alert");
+    $alertDiv.removeClass('hidden');
+    $alertDiv.html("<h3>ALERT "+name+ " DEPARTMENT</h3>");
+     //setTimeout($alertDiv.addClass('hidden'), 5000);
+   // var intervalDiv = setInterval($alertDiv.addClass('hidden'), 1000); // Will alert every second.
+// clearInterval(intervalID); // Will clear the timer.
+});
+   setTimeout(function(){
+    var $alertDiv = $("#alert");
+    $alertDiv.toggleClass('hidden');
+   }, 5000);
+          //alert("<div class='alert alert-danger' role='alert'>ALERT THE DEPARTMENT</div>");
+        }
     }
 
     setTimeout(update, 1000);
@@ -435,6 +896,40 @@ var panel = "<div class='panel panel-primary'>"+
 
 });//end of POLY FORLOOP
 
+setInterval(function(){ 
+  var randomNum = Math.round(Math.random() * 9) + 1;
+  $('#cps').toggleClass('statusColour'); 
+    // $('#mag').toggleClass('statusColour'); 
+    $('.el').toggleClass('elem'); 
+    $(".el").html("INACTIVE"); 
+   setTimeout(function(){
+  $('#cps').toggleClass('statusColour'); 
+  // $('#mag').toggleClass('statusColour');  
+  // $("active").css("color", "#c7254e");
+  //  $("#inactive").css("color", "#c7254e");
+  //   $("active").addClass("hidden");
+  $(".el").html("ACTIVE"); 
+   $('.el').toggleClass('elem'); 
+   }, randomNum * 1000);
+
+},10000);
+
+setInterval(function(){ 
+  var randomNumber = Math.round(Math.random() * 5) + 1;
+
+    $('#mag').toggleClass('statusColour'); 
+    $('.ma').toggleClass('elem'); 
+    $('.ma').html("INACTIVE"); 
+   setTimeout(function(){
+  $('#mag').toggleClass('statusColour');  
+  // $("active").css("color", "#c7254e");
+  //  $("#inactive").css("color", "#c7254e");
+  //   $("active").addClass("hidden");
+  $('.ma').html("ACTIVE"); 
+   $('.ma').toggleClass('elem'); 
+   }, randomNumber * 1000);
+
+},6000);
  
 // avon.google.maps.event.addListener('click', function(geoJsonEvent){
 

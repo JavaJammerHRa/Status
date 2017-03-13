@@ -1,9 +1,8 @@
   
   #map {
-    height: 400px;
+    height: 520px;
     padding-bottom: 10px;
     width: auto;
-
   }
   html, body {
     height: 100%;
@@ -11,10 +10,109 @@
     padding: 0;
   }
 
-  #content-window{
+  /*#content-window{
     height:400px;
     width: auto;
-  }
+  }*/
+
+.bs-callout {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+  .bs-callout-dvla {
+    border-left-color: #0e9805;
+    color: #c7254e;
+    background-color: rgba(243, 211, 211, 0.93);
+    /*border-left-color: #ce4844;
+    border-right-color: #ce4844;*/
+}
+
+  .bs-callout-mag {
+    border-left-color: rgb(255, 235, 59);
+    color: #4caf50;
+    background-color: #dff0d8;
+}
+  .bs-callout-cps {
+    border-left-color: #337ab7;
+    color: #4caf50;
+    background-color: #dff0d8;
+}
+  .bs-callout-title {
+    border-bottom-color: #1b809e;
+    border-left-color: #1b809e;
+    border-right-color: #1b809e;
+}
+.badge{
+    background-color:#ffffff;
+    color: #1b809e;
+    float: right;
+    font-size: 20px;
+}
+.topbar{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.statusColour {
+    color: #c7254e;
+    background-color: rgba(243, 211, 211, 0.93);
+}
+
+.el {
+    padding:2px 4px;
+    width: 30%;
+    color: #4caf50;
+    background-color: #ffffff;;
+    border-radius: 4px;
+    display: inline-block;
+}
+.ma {
+    padding:2px 4px;
+    width: 30%;
+    color: #4caf50;
+    background-color: #ffffff;;
+    border-radius: 4px;
+    display: inline-block;
+}
+.elem {
+    padding:2px 4px;
+    width: 40%;
+    color: #c7254e;
+    background-color: #ffffff;;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+active {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #4caf50;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+inactive {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #c7254e;
+    background-color: #ffffff;;
+    border-radius: 4px;
+}
+
+#maintenance{
+     display: inline-block;
+}
+
+/*visible {
+    color: #468847;
+    background-color: #dff0d8!important;
+}shade of green ==rgb(203, 236, 203);
+tables.less:88*/
+
+
      /*Set black background color, white text and some padding 
     footer {
       background-color: #555;

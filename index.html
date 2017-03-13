@@ -11,7 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
-    <title>Police department status</title>
+    <title>CPS status</title>
 
     <!-- Bootstrap -->
     <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
@@ -32,32 +32,73 @@
       <p><a href="#">Link</a></p>
       <p><a href="#">Link</a></p>
     </div>-->
-    <div class="col-sm-8 text-center"> 
-      <h1>Police Force Status</h1>
+    <div class="col-sm-6 text-center"> 
+      <a class="list-group-item active topbar"><h1>Police Department</h1> </a>
+    
+    
       <div id ="map"></div> 
     </div>
-    <div class="col-sm-4 text-left">
-        <div id="location"><h1>Magistrates / DVLA</h1></div>
+    <div class="col-sm-3 text-center"> 
+      <a class="list-group-item active topbar"><h1>Status</h1> </a>
+  
+    <!--<div class="inactive" >:INACTIVE</div>-->
+          <div class="bs-callout bs-callout-cps" id="cps"> 
+  <h4>CPS: <div class="el">ACTIVE</div>
+  </h4> 
+   <!--<div class="elem">:INACTIVE</div>-->
+
+<a href="#" class="thumbnail"> <img  style="height: 70px; width: 80px; display: block;" 
+  src="images/cps.png" data-holder-rendered="true"> </a>
+  </div>
+  
+           <div class="bs-callout bs-callout-dvla" id="dvla"> 
+  <h4>DVLA:  <div class="elem"> INACTIVE</div>
+  </h4> 
+  <a href="#" class="thumbnail"> <img  style="height: 70px; width: 120px; display: block;" 
+  src="images/dvla2.png" data-holder-rendered="true"> </a>
+  </div>
+
+          <div class="bs-callout bs-callout-mag" id="mag"> 
+  <h4>Magistrates: <div class="ma"> ACTIVE</div>
+  </h4> 
+   <a href="#" class="thumbnail"> <img  style="height: 70px; width: 120px; display: block;" 
+  src="images/mag.png" data-holder-rendered="true"> </a>
+  </div>
+
+<!--<div class="alert alert-danger hidden" id="alert" role="alert">ALERT THE DEPARTMENT</div>-->
+
+    </div>
+    <div class="col-sm-3 text-left">
+<a class="list-group-item active topbar"><h1 id="location">More Detail</h1> </a>
+          
         <div id="content-window">
  <div class="panel panel-primary"> 
   <div class="panel-heading"> 
     <h2 class="panel-title">More Information</h2> 
   </div> 
   <div class="panel-body"> Click on the map for more police department inforamtion. </div> 
-  <div class="progress">
+
+  <!--<div class="progress">
   <div class="progress-bar progress-bar-danger" role="progressbar"  aria-valuenow="80" aria-valuemin="10" aria-valuemax="100" style="width: 80%">
     <span class="sr-only">80% Complete (danger)</span>
   </div>
-</div>
+</div>-->
     </div>
+    </div>
+  <!--<div class='text-center'>
+<a href='#' class='list-group-item active'>
+   <h3>Cambridgeshire</h3></a>
+   <a href="#" class="thumbnail"> <img  style="height: 200px; width: 200px; display: block;" 
+  src="logo/devon.jpg" data-holder-rendered="true"> </a>
+   </div>-->
+    <!--<ul class="list-group">
+  <li class="list-group-item">
+    <span class="badge">03:22</span>
+    ACTIVE:  
+  </li>
+</ul>-->
 
-  <!--<div id="maintenance">22:22</div>
- <div id="worked">31:14</div>-->
-          </div>
-       
-       <!--<div id="content-window"></div>-->
-    
-
+    <div class="alert alert-danger hidden" id="alert" role="alert">ALERT THE DEPARTMENT</div>
     </div>
   </div>
 </div>
