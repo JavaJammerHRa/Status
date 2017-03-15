@@ -543,7 +543,7 @@ wiltshire.loadGeoJson('http://localhost/status/data/wiltshire.geojson');
 
 
 arrayOfPoly.push(
-  [avonsomerset,"1","03:00","13/03/2017","13","avon-somerset.jpg"],
+  [avonsomerset,"1","03:00","15/03/2017","13","avon-somerset.jpg"],
   [bedfordshire,"0","03:00","06/03/2017","27","bedfordshire.jpg"],
   [devon,"1","02:22","06/03/2017","41","devon.jpg"],
   [dorset,"1","03:11","13/03/2017","33","dorset.jpg"],
@@ -581,7 +581,7 @@ arrayOfPoly.push(
   [suffolk,"1","03:00","06/03/2017","23","suffolk.jpg"],
   [surrey,"1","03:00","06/03/2017","23","surrey.png"],
   [sussex,"1","03:00","06/03/2017","23","sussex.jpg"],
-  [thamesValley,"0","03:00","06/03/2017","23","thamesvalley.jpg"],
+  [thamesValley,"0","03:00","15/03/2017","23","thamesvalley.jpg"],
   [warwickshire,"1","03:00","06/03/2017","23","warwickshire.jpg"],
   [westMercia,"1","03:00","06/03/2017","23","westmercia.jpg"],
   [westMidlands,"1","03:00","06/03/2017","23","westmidlands.jpg"],
@@ -613,14 +613,7 @@ arrayOfPoly.push(
   }
  };
 
- function setColour(col){
-  return {
-    strokeColor: 'yellow',
-    strokeWeight: 1.5,
-    fillColor: col,
-    fillOpacity: 0.4
-  }
- };
+
 
 
 
@@ -710,7 +703,7 @@ maintenanceCheck();
     var name = event.feature.getProperty("Name");
     $(document).ready(function (e) {
     var $location = $("#location");
-    $location.html("<h1>"+name+"</h1s>");
+    $location.html("<h2>"+name+"</h2>");
 });
 
       //   var myHTML = event.feature.getProperty("Name");
@@ -749,7 +742,7 @@ maintenanceCheck();
     var name = event.feature.getProperty("Name");
     $(document).ready(function (e) {
     var $location = $("#location");
-    $location.html("<h1>More Detail</h1s>");
+    $location.html("<h2>More Detail</h2s>");
     });
 }); 
 //
@@ -896,6 +889,8 @@ var panel = "<div class='panel panel-"+panel+"'>"+
 
 });//end of POLY FORLOOP
 
+
+
 setInterval(function(){ 
   var randomNum = Math.round(Math.random() * 9) + 1;
   $('#cps').toggleClass('statusColour'); 
@@ -931,54 +926,253 @@ setInterval(function(){
 
 },6000);
  
-// avon.google.maps.event.addListener('click', function(geoJsonEvent){
-
-//   //   var text = geoJsonEvent.featureData.name;
-//   //  console.log(JSON.stringify(geoJsonEvent));
-//   //  console.log(text);
-//    console.log(map.getZoom());
-// })
-//       // place marker
-// google.maps.event.addListener(Avonsomerset,'click', function(kmlEvent){
-//    var text = kmlEvent.featureData.name;
-//    console.log(JSON.stringify(kmlEvent));
-//    map.data.setStyle({
-//           fillColor: 'green',
-//           strokeWeight: 10
-//         });
-//   //Avonsomerset.setOptions({fillColor: "#0000FF", strokeColor: "#0000FF", fillOpacity: 0.3});
-//    console.log(text);
-//    console.log(map.getZoom());
-//    var text = kmlEvent.featureData.description;
-//   showSideWindow(text);
-    
-// });
-
-//           //google example 
-//     var gg = new google.maps.KmlLayer({
-//           url: 'http://googlemaps.github.io/js-v2-samples/ggeoxml/cta.kml'
-//         });
-//   gg.setMap(map);
-
-// google.maps.event.addListener(gg, 'click', function(kmlEvent){
-//     var text = kmlEvent.featureData.name;
-//    //console.log(JSON.stringify(kmlEvent));
-//    console.log(text);
-//    console.log(map.getZoom());
-// })
-
    
-
-
     function showSideWindow(text) {
     var sidediv = document.getElementById('content-window');
     sidediv.innerHTML = text;
   }
-      // Avonsomerset.setMap(map);
-      // Devon.setMap(map);
-      // dorset.setMap(map);
-      //poly();
+  // Create the DIV to hold the control and call the CenterControl()
+  // constructor passing in this DIV.
+    var centerControlDiv14 = document.createElement('div');
+  var centerControlDiv13 = document.createElement('div');
+  var centerControlDiv12 = document.createElement('div');
+  var centerControlDiv11 = document.createElement('div');
+  var centerControlDiv10 = document.createElement('div');
+  var centerControlDiv9 = document.createElement('div');
+  var centerControlDiv8 = document.createElement('div');
+    var resetControlDiv = document.createElement('div');
+  
+  var colourDiv1 = document.createElement('div');
+  var colourDiv2 = document.createElement('div');
+  var colourDiv3 = document.createElement('div');
+  var colourDiv4 = document.createElement('div');
+  var colourDiv5 = document.createElement('div');
+  var colourDiv6 = document.createElement('div');
+  var colourDiv7 = document.createElement('div');
+  var colourDiv8 = document.createElement('div');
+  var colourDiv9 = document.createElement('div');
+  var colourDiv10 = document.createElement('div');
+  var colour1 = new colourGrade(colourDiv1, map,"#57150F");
+  var colour2 = new colourGrade(colourDiv1, map,"#791E15");
+  var colour3 = new colourGrade(colourDiv1, map,"#8B2218");
+  var colour4 = new colourGrade(colourDiv1, map,"#9C261C");
+  var colour5 = new colourGrade(colourDiv1, map,"#AD2B1F");
+  var colour6 = new colourGrade(colourDiv1, map,"#BF2F22");
+  var colour7 = new colourGrade(colourDiv1, map,"#DA3D2F");
+  var colour8 = new colourGrade(colourDiv1, map,"#E05E52");
+  var colour9 = new colourGrade(colourDiv1, map,"#EA8E86");
+  var colour10 = new colourGrade(colourDiv1, map,"#F3BEBA");
+  map.controls[google.maps.ControlPosition.TOP_RIGHT].push(colourDiv1);
+   map.controls[google.maps.ControlPosition.TOP_RIGHT].push(colourDiv2);
+    map.controls[google.maps.ControlPosition.TOP_RIGHT].push(colourDiv3);
+     map.controls[google.maps.ControlPosition.TOP_RIGHT].push(colourDiv4);
+      map.controls[google.maps.ControlPosition.TOP_RIGHT].push(colourDiv5);
+       map.controls[google.maps.ControlPosition.TOP_RIGHT].push(colourDiv6);
+        map.controls[google.maps.ControlPosition.TOP_RIGHT].push(colourDiv7);
+         map.controls[google.maps.ControlPosition.TOP_RIGHT].push(colourDiv8);
+          map.controls[google.maps.ControlPosition.TOP_RIGHT].push(colourDiv9);
+           map.controls[google.maps.ControlPosition.TOP_RIGHT].push(colourDiv10);
+
+  var centerControl14 = new CenterControl(centerControlDiv14, map,"14/03");
+  var centerControl13 = new CenterControl(centerControlDiv13, map,"13/03");
+  var centerControl12 = new CenterControl(centerControlDiv12, map,"12/03");
+  var centerControl11 = new CenterControl(centerControlDiv11, map,"11/03");
+  var centerControl10 = new CenterControl(centerControlDiv10, map,"10/03");
+  var centerControl9 = new CenterControl(centerControlDiv9, map,"09/03");
+  var centerControl8 = new CenterControl(centerControlDiv8, map,"08/03");
+  var resetControl = new ResetControl(resetControlDiv, map,"REFRESH");
+
+
+  map.controls[google.maps.ControlPosition.BOTTOM_LEFT].push(centerControlDiv14);
+  map.controls[google.maps.ControlPosition.BOTTOM_LEFT].push(centerControlDiv13);
+  map.controls[google.maps.ControlPosition.BOTTOM_LEFT].push(centerControlDiv12);
+  map.controls[google.maps.ControlPosition.BOTTOM_LEFT].push(centerControlDiv11);
+  map.controls[google.maps.ControlPosition.BOTTOM_LEFT].push(centerControlDiv10);
+  map.controls[google.maps.ControlPosition.BOTTOM_LEFT].push(centerControlDiv9);
+  map.controls[google.maps.ControlPosition.BOTTOM_LEFT].push(centerControlDiv8);
+  map.controls[google.maps.ControlPosition.BOTTOM_LEFT].push(resetControlDiv);
     }
+
+var chicago = {lat: 41.85, lng: -87.65};
+
+/**
+ * The CenterControl adds a control to the map that recenters the map on
+ * Chicago.
+ * This constructor takes the control DIV as an argument.
+ * @constructor
+ */
+function CenterControl(controlDiv, map, date) {
+
+  // Set CSS for the control border.
+  var controlUI = document.createElement('div');
+  controlUI.style.height = "25px";
+  controlUI.style.width = "50px";
+
+  controlUI.style.backgroundColor = '#fff';
+  controlUI.style.border = '2px solid ';
+  //controlUI.style.borderRadius = '5px';
+ // controlUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
+  controlUI.style.cursor = 'pointer';
+  controlUI.style.padding = "2px";
+  controlUI.style.marginBottom = '15px';
+  controlUI.style.marginRight = '0px';
+  controlUI.style.textAlign = 'center';
+  controlUI.title = 'Historical Activity Data';
+  controlDiv.appendChild(controlUI);
+
+
+  // Set CSS for the control interior.
+  var controlText = document.createElement('div');
+  controlText.style.color = 'rgb(25,25,25)';
+  controlText.style.fontFamily = 'Roboto,Arial,sans-serif';
+  controlText.style.fontSize = '12px';
+  controlText.style.paddingLeft = '5px';
+  controlText.style.paddingRight = '5px';
+  controlText.innerHTML = date;
+  controlUI.appendChild(controlText);
+
+  // Setup the click event listeners: simply set the map to Chicago.
+  controlUI.addEventListener('click', function() {
+
+    arrayOfPoly.forEach(function(element) {
+          var randomN = Math.round(Math.random() * 9) + 1;
+    var colour = randomColour(randomN);
+      element[0].setMap(null);
+      console.log(randomN);
+        element[0].setStyle(setColourCal(colour));
+        element[0].setMap(map);
+
+    });
+    
+  });
+
+  controlUI.addEventListener('mouseover', function() {
+  //controlUI.style.backgroundColor = '#dff0d8';
+    controlUI.style.borderBottomColor = "rgb(255, 235, 59)";
+    controlUI.style.backgroundColor = '#368bcc';
+    controlUI.style.borderBottomWidth = "3px";
+    controlUI.style.borderRadius = "3px";
+  controlDiv.appendChild(controlUI);
+});
+
+  controlUI.addEventListener('mouseout', function() {
+  controlUI.style.backgroundColor = '#fff';
+   controlUI.style.borderBottomWidth = "0px";
+  controlDiv.appendChild(controlUI);
+  });
+}
+
+function colourGrade(controlDiv, map, colour) {
+
+  var keyUI = document.createElement('div');
+  keyUI.style.height = "20px";
+  keyUI.style.width = "20px";
+  keyUI.style.boxShadow = " 0 2px 3px #181818";
+  keyUI.style.backgroundColor = colour;
+  keyUI.style.marginRight = '15px';
+  keyUI.style.textAlign = 'center';
+  keyUI.title = 'colour grade';
+  controlDiv.appendChild(keyUI);
+
+}
+
+/**
+ * This constructor takes the control DIV as an argument.
+ * @constructor
+ */
+function ResetControl(controlDiv, map, text) {
+
+  var keyUI = document.createElement('div');
+  // keyUI.style.height = "0px";
+  // keyUI.style.width = "20px";
+  keyUI.style.boxShadow = " 0 2px 3px #181818";
+   keyUI.style.borderRadius = "5px";
+  keyUI.style.backgroundColor = "#2C85F2";
+  keyUI.style.cursor = 'pointer';
+  keyUI.style.marginBottom = '15px';
+  keyUI.style.marginRight = '10px';
+  keyUI.style.textAlign = 'center';
+  keyUI.title = 'reload map';
+  controlDiv.appendChild(keyUI);
+  
+  // Set CSS for the control border.
+
+
+  // Set CSS for the control interior.
+  var controlText = document.createElement('div');
+  controlText.style.color = 'rgb(25,25,25)';
+  controlText.style.fontFamily = 'Roboto,Arial,sans-serif';
+  controlText.style.fontSize = '14px';
+  controlText.style.lineHeight = '38px';
+  controlText.style.paddingLeft = '5px';
+  controlText.style.paddingRight = '5px';
+  controlText.innerHTML = text;
+  keyUI.appendChild(controlText);
+
+  // Setup the click event listeners: simply set the map to Chicago.
+  keyUI.addEventListener('click', function() {
+    
+    arrayOfPoly.forEach(function(element) {
+    location.reload();
+    });
+    
+  });
+
+}
+
+function randomColour(randomnumber){
+      var colour;
+    switch(randomnumber){
+      case 1:
+      colour = "#F3BEBA";
+        break;
+      case 2:
+      colour = "#EA8E86";
+        break;
+      case 3:
+      colour = "#E05E52";
+        break;
+      case 4:
+      colour = "#DA3D2F";
+        break;
+      case 5:
+      colour = "#BF2F22";
+        break;
+      case 6:
+      colour = "#AD2B1F";
+            break;
+      case 7:
+      colour = "#9C261C";
+            break;
+      case 8:
+      colour = "#8B2218";
+            break;
+      case 9:
+      colour = "#791E15";
+            break;
+      case 10:
+      colour = "#57150F";
+    }
+    return colour;
+}
+ function setColour(col){
+  return {
+    strokeColor: 'yellow',
+    strokeWeight: 1.5,
+    fillColor: col,
+    fillOpacity: 0.4
+  }
+ };
+
+ function setColourCal(col){
+  return {
+    strokeColor: "#de8022",
+    strokeWeight: 1.3,
+    fillColor: col,
+    fillOpacity: 0.8
+  }
+ };
+
 function clearPoly(element){
 arrayOfPoly.forEach(function(element) {
     arrayOfPoly[element].setMap(null);
@@ -991,17 +1185,6 @@ window.setInterval(function(){
   }, timeout)
 }
 
-// function poly(){
-//  var getActive = function(event){
-//   var active = event.getProperty("Active");
-//   var location = event.getProperty("Name");
-//   console.log(location+ " is "+active);
-//   return active;
-//  };
-// arrayOfPoly.forEach(function(element) {
-//   console.log("status is: " +element.getActive);
-// });
-// }
 
 function upTime(countTo) {
   var now = new Date();
