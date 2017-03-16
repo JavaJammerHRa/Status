@@ -37,7 +37,8 @@
     border-radius: 10px;
 }
 .bs-callout {
-    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
     margin: 10px 0;
     border: 1px solid #eee;
     border-left-width: 5px;
@@ -60,6 +61,22 @@
     border-left-color: #337ab7;
     color: #4caf50;
     background-color: #dff0d8;
+}
+
+  .bs-callout-xh {
+    border-left-color: #44efcf;
+    color: #4caf50;
+    background-color: #dff0d8;
+    /*border-left-color: #ce4844;
+    border-right-color: #ce4844;*/
+}
+
+  .bs-callout-ip {
+    border-left-color: #2b8cc4;
+    color: #4caf50;
+    background-color: #dff0d8;
+    /*border-left-color: #ce4844;
+    border-right-color: #ce4844;*/
 }
   .bs-callout-title {
     border-bottom-color: #1b809e;
@@ -84,7 +101,7 @@
 
 .el {
     padding:2px 4px;
-    width: 30%;
+    width: 50%;
     color: #4caf50;
     background-color: #ffffff;;
     border-radius: 4px;
@@ -92,7 +109,7 @@
 }
 .ma {
     padding:2px 4px;
-    width: 30%;
+    width: 50%;
     color: #4caf50;
     background-color: #ffffff;;
     border-radius: 4px;
@@ -100,13 +117,23 @@
 }
 .elem {
     padding:2px 4px;
-    width: 40%;
+    width: 50%;
     color: #c7254e;
     background-color: #ffffff;;
     border-radius: 4px;
     display: inline-block;
 }
 
+.thumbnail{
+        margin-bottom: 10px;
+        /*margin-top: 5px;
+        width: 70%;*/
+}
+
+.logo{
+    margin-bottom: 0px;
+}
+/*
 active {
     padding: 2px 4px;
     font-size: 90%;
@@ -121,7 +148,7 @@ inactive {
     color: #c7254e;
     background-color: #ffffff;;
     border-radius: 4px;
-}
+}*/
 
 #maintenance{
      display: inline-block;

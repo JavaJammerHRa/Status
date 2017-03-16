@@ -543,56 +543,56 @@ wiltshire.loadGeoJson('http://localhost/status/data/wiltshire.geojson');
 
 
 arrayOfPoly.push(
-  [avonsomerset,"1","03:00","15/03/2017","13","avon-somerset.jpg"],
-  [bedfordshire,"0","03:00","06/03/2017","27","bedfordshire.jpg"],
-  [devon,"1","02:22","06/03/2017","41","devon.jpg"],
-  [dorset,"1","03:11","13/03/2017","33","dorset.jpg"],
-  [hampshire,"1","02:31","23/03/2017","22","hampshire.png"],
-  [cambridgeshire,"1","03:00","06/03/2017","21","cambridgeshire.jpg"],
-  [cheshire,"1","03:00","06/03/2017","25","cheshire.jpg"],
-  [cityOfLondon,"1","03:00","06/03/2017","23","cityoflondon.png"],
-  [cleveland,"1","03:00","06/03/2017","11","cleveland.png"],
-  [cumbria,"1","03:00","06/03/2017","15","cumbria.png"],
-  [derbyshire,"1","03:00","06/03/2017","15","derbyshire.png"],
-  [durham,"1","03:00","06/03/2017","23","durham.jpg"],
-  [dyfedPowys,"1","03:00","13/03/2017","89","dyfed.jpg"],
-  [essex,"1","03:00","06/03/2017","26","essex.jpg"],
-  [gloucestershire,"1","03:00","06/03/2017","23","gloucestershire.gif"],
-  [greaterManchester,"1","03:00","06/03/2017","23","manchester.png"],
-  [gwent,"1","03:00","06/03/2017","23","gwent.jpg"],
-  [hertfordshire,"1","03:00","13/03/2017","23","hertfordshire.jpg"],
-  [humberside,"1","03:00","06/03/2017","23","humbria.png"],
-  [kent,"1","03:00","06/03/2017","23","kent.gif"],
-  [lancashire,"1","03:00","06/03/2017","23","lancashire.jpg"],
-  [leicestershire,"1","03:00","06/03/2017","23","leicestershire.jpg"],
-  [lincolnshire,"1","03:00","06/03/2017","23","lincolnshire.jpg"],
-  [merseyside,"1","03:00","06/03/2017","23","merseyside.jpg"],
+  [avonsomerset,"1","03:00","16/03/2017","13","avon-somerset.jpg"],
+  [bedfordshire,"1","03:00","25/03/2017","27","bedfordshire.jpg"],
+  [devon,"1","02:22","26/03/2017","41","devon.jpg"],
+  [dorset,"1","03:11","25/03/2017","33","dorset.jpg"],
+  [hampshire,"1","02:31","25/03/2017","22","hampshire.png"],
+  [cambridgeshire,"1","03:00","26/03/2017","21","cambridgeshire.jpg"],
+  [cheshire,"1","03:00","25/03/2017","25","cheshire.jpg"],
+  [cityOfLondon,"1","03:00","26/03/2017","23","cityoflondon.png"],
+  [cleveland,"1","03:00","25/03/2017","11","cleveland.png"],
+  [cumbria,"1","03:00","25/03/2017","15","cumbria.png"],
+  [derbyshire,"1","03:00","26/03/2017","15","derbyshire.png"],
+  [durham,"1","03:00","25/03/2017","23","durham.jpg"],
+  [dyfedPowys,"0","03:00","13/03/2017","89","dyfed.jpg"],
+  [essex,"1","03:00","25/03/2017","26","essex.jpg"],
+  [gloucestershire,"1","03:00","25/03/2017","23","gloucestershire.gif"],
+  [greaterManchester,"1","03:00","26/03/2017","23","manchester.png"],
+  [gwent,"1","03:00","25/03/2017","23","gwent.jpg"],
+  [hertfordshire,"1","03:00","25/03/2017","23","hertfordshire.jpg"],
+  [humberside,"1","03:00","25/03/2017","23","humbria.png"],
+  [kent,"1","03:00","25/03/2017","23","kent.gif"],
+  [lancashire,"1","03:00","25/03/2017","23","lancashire.jpg"],
+  [leicestershire,"1","03:00","26/03/2017","23","leicestershire.jpg"],
+  [lincolnshire,"1","03:00","25/03/2017","23","lincolnshire.jpg"],
+  [merseyside,"1","03:00","25/03/2017","23","merseyside.jpg"],
   [metropolitan,"1","03:00","14/03/2017","23","met.jpg"],
-  [norfolk,"1","03:00","06/03/2017","23","norfolk.png"],
-  [northamptonshire,"1","03:00","06/03/2017","23","northamptonshire.jpg"],
-  [northernIreland,"1","03:00","06/03/2017","23","northernIreland.gif"],
-  [northumbria,"1","03:00","06/03/2017","23","northumbria.png"],
-  [northWales,"1","03:00","06/03/2017","23","northwales.png"],
-  [northYorkshire,"1","03:00","06/03/2017","23","northYorkshire.png"],
-  [nottinghamshire,"1","03:00","06/03/2017","23","nottinghamshire.jpg"],
-  [southWales,"1","03:00","06/03/2017","23","southwales.jpg"],
-  [southYorkshire,"1","03:00","06/03/2017","23","southyorkshire.jpg"],
-  [staffordshire,"1","03:00","06/03/2017","23","staffordshire.jpg"],
-  [suffolk,"1","03:00","06/03/2017","23","suffolk.jpg"],
-  [surrey,"1","03:00","06/03/2017","23","surrey.png"],
-  [sussex,"1","03:00","06/03/2017","23","sussex.jpg"],
-  [thamesValley,"0","03:00","15/03/2017","23","thamesvalley.jpg"],
-  [warwickshire,"1","03:00","06/03/2017","23","warwickshire.jpg"],
-  [westMercia,"1","03:00","06/03/2017","23","westmercia.jpg"],
-  [westMidlands,"1","03:00","06/03/2017","23","westmidlands.jpg"],
-  [westYorkshire,"1","03:00","06/03/2017","23","westyorkshire.jpg"],
-  [wiltshire,"1","03:00","06/03/2017","23","wiltshire.jpg"]);
+  [norfolk,"1","03:00","25/03/2017","23","norfolk.png"],
+  [northamptonshire,"1","03:00","/03/2017","23","northamptonshire.jpg"],
+  [northernIreland,"1","03:00","25/03/2017","23","northernIreland.gif"],
+  [northumbria,"1","03:00","26/03/2017","23","northumbria.png"],
+  [northWales,"1","03:00","25/03/2017","23","northwales.png"],
+  [northYorkshire,"1","03:00","26/03/2017","23","northYorkshire.png"],
+  [nottinghamshire,"1","03:00","25/03/2017","23","nottinghamshire.jpg"],
+  [southWales,"1","03:00","26/03/2017","23","southwales.jpg"],
+  [southYorkshire,"1","03:00","25/03/2017","23","southyorkshire.jpg"],
+  [staffordshire,"1","03:00","26/03/2017","23","staffordshire.jpg"],
+  [suffolk,"1","03:00","25/03/2017","23","suffolk.jpg"],
+  [surrey,"1","03:00","26/03/2017","23","surrey.png"],
+  [sussex,"1","03:00","25/03/2017","23","sussex.jpg"],
+  [thamesValley,"0","03:00","16/03/2017","23","thamesvalley.jpg"],
+  [warwickshire,"1","03:00","26/03/2017","23","warwickshire.jpg"],
+  [westMercia,"1","03:00","25/03/2017","23","westmercia.jpg"],
+  [westMidlands,"1","03:00","26/03/2017","23","westmidlands.jpg"],
+  [westYorkshire,"1","03:00","25/03/2017","23","westyorkshire.jpg"],
+  [wiltshire,"1","03:00","25/03/2017","23","wiltshire.jpg"]);
 
 
 
 
  var setColourStyle = function(event){
-  var active = event.getProperty("Active");
+  var active = event.getProperty("AVAILABLE");
   var location = event.getProperty("Name");
   if(status == 2){
     colour = 'orange';
@@ -607,7 +607,7 @@ arrayOfPoly.push(
 
   return {
   strokeColor: 'yellow',
-  strokeWeight: 4,
+  strokeWeight: 1.3,
   fillColor: colour,
   fillOpacity: 0.5
   }
@@ -621,7 +621,7 @@ arrayOfPoly.push(
   var infowindow = new google.maps.InfoWindow();
 
 arrayOfPoly.forEach(function(element) {
-  console.log(element[1]);
+  //console.log(element[1]);
 function maintenanceCheck(){
   var ll;
  if( today == element[3]){
@@ -633,59 +633,28 @@ function maintenanceCheck(){
  console.log(ll);
  return ll;
 }
-maintenanceCheck();
-
-
-
-// if(element[1] == 1){
-//   console.log("green");
-//   colour = "green";
-// }else if(today == element[3][0]){
-//   console.log("orange");
-// colour = "orange";
-// }else{
-//   console.log("red");
-//   colour = "red";
-// }
-
-
-  // if(today == element[3][0]){
-  //   console.log(element[0].setStyle({
-  // strokeColor: 'yellow',
-  // strokeWeight: 4,
-  // fillColor: 'orange',
-  // fillOpacity: 0.5
-  //      }));
-  // }else{
-  //   element[0].setStyle(setColourStyle);
-  //   console.log("error");
-  // }
-
-
-
-
-
+//maintenanceCheck();
 
 
   //Check status and change colour of poly
   if(element[1] == 1){
     if(today == element[3]){
     status = "MAINTENANCE";
-    console.log("MAINTENANCE");
+    //console.log("MAINTENANCE");
     element[0].setStyle(setColour('orange'));
     }else{
-    status = "ACTIVE";
-    console.log("ACTIVE");
+    status = "AVAILABLE";
+    //console.log("AVAILABLE");
   element[0].setStyle(setColour('green'));
     }
   }else if(element[1]== 0){
     if(today == element[3]){
     status = "MAINTENANCE";
-    console.log("MAINTENANCE");
+    //console.log("MAINTENANCE");
     element[0].setStyle(setColour('orange'));
     }else{
-    status = "INACTIVE";
-    console.log("INACTIVE");
+    status = "UNAVAILABLE";
+    //console.log("AVAILABLE");
     element[0].setStyle(setColour('red'));
     }
   }
@@ -695,7 +664,7 @@ maintenanceCheck();
   element[0].addListener('mouseover', function(event) {
   element[0].setStyle({
   strokeColor: 'yellow',
-  strokeWeight: 5,
+  strokeWeight: 4,
   fillColor: 'blue',
   fillOpacity: 0.4
        });
@@ -706,11 +675,6 @@ maintenanceCheck();
     $location.html("<h2>"+name+"</h2>");
 });
 
-      //   var myHTML = event.feature.getProperty("Name");
-      //  infowindow.setContent("<div style='width:150px; text-align: center;'>"+myHTML+"</div>");
-      //  infowindow.setPosition(element[0].event.getGeometry().get());
-      //  infowindow.setOptions({pixelOffset: new google.maps.Size(0,-30)});
-      //  infowindow.open(map);
   });  
 
   //mouse out changes back to the default colour
@@ -720,21 +684,21 @@ maintenanceCheck();
   if(element[1] == 1){
     if(today == element[3]){
     status = "MAINTENANCE";
-    console.log("MAINTENANCE")
+    //console.log("MAINTENANCE")
     element[0].setStyle(setColour('orange'));
     }else{
-    status = "ACTIVE";
-    console.log("ACTIVE")
+    status = "AVAILABLE";
+    //console.log("AVAILABLE")
   element[0].setStyle(setColour('green'));
     }
   }else if(element[1]== 0){
     if(today == element[3]){
     status = "MAINTENANCE";
-    console.log("MAINTENANCE")
+    //console.log("MAINTENANCE")
     element[0].setStyle(setColour('orange'));
     }else{
-    status = "INACTIVE";
-    console.log("INACTIVE")
+    status = "UNAVAILABLE";
+    //console.log("UNAVAILABLE")
     element[0].setStyle(setColour('red'));
     }
   }
@@ -776,8 +740,8 @@ maintenanceCheck();
     console.log("MAINTENANCE")
     element[0].setStyle(setColour('orange'));
     }else{
-    state = "ACTIVE";
-    console.log("ACTIVE")
+    state = "AVAILABLE";
+    console.log("AVAILABLE")
   element[0].setStyle(setColour('green'));
     }
   }else if(element[1]== 0){
@@ -786,50 +750,30 @@ maintenanceCheck();
     console.log("MAINTENANCE")
     element[0].setStyle(setColour('orange'));
     }else{
-    state = "INACTIVE";
-    console.log("INACTIVE")
+    state = "UNAVAILABLE";
+    console.log("UNAVAILABLE")
     element[0].setStyle(setColour('red'));
     }
   }
     var duration = element[2];
-    var div = "<div class='row'>" +
-"  <div class='col-sm-4 col-md-2'>"+
-  "  <div class='thumbnail'>"+
-     " <img src='' alt=''>"+
-      "<div class='caption'>"+
-        "<h3>"+name +"</h3>"+
-        "<p>" + state+': '+duration +"</p>"+
-        "<p><a href='' class='btn btn-primary' role='button'>Button</a> <a href='' class='btn btn-default' role='button'>Button</a></p>"
-      "</div>"+
-    "</div>"+
-  "</div>"+
-"</div>";
 var statusColour = "danger";
-if(state == "ACTIVE"){
+if(state == "AVAILABLE"){
   statusColour = "success";
 }else if(state == "MAINTENANCE"){
   statusColour = "warning";
+  messages = "0";
 }
 
 var pan2 = "<div class='text-center'>"+
 "<a href='#' class='list-group-item active'>"+
    "<h3>" +name+"</h3></a></div>"+
 
-"   <a href='#' class='thumbnail'> <img  style='height: 200px; width: 200px; display: block;'" +
+"   <a href='#' class='thumbnail logo center-block'> <img  style='height: 200px; width: 200px; display: block;'" +
   "src='logo/"+image+"' data-holder-rendered='true'> </a>"+
   "<a href='#' class='list-group-item list-group-item-"+statusColour+"'><h4>"+state+":  <span class='badge' id='maintenance'>"+duration+"</span></h4></a>"+
-  "<a href='#' class='list-group-item list-group-item-info'><h4>Message Queue:  <span class='badge'>"+messages+"</span></h4></a>"+
+  "<a href='#' class='list-group-item list-group-item-info'><h4>Message Queue:  <span class='badge' id='message'>"+messages+"</span></h4></a>"+
   "<a href='#' class='list-group-item list-group-item-warning'><h4>Maintenance:  <span class='badge'>"+maintenance+"</span></h4></a>"
 ;
-var panel = "<div class='panel panel-"+panel+"'>"+ 
-  "<div class='panel-heading'> <h4 class='detailPanel'>"+name+"</h4>"+ 
-  "</div>"+ 
-"<div class='panel-body'><h4>"+ state+': '+"<div id='maintenance'>"+duration+"</div></h4>"+
-"<h4>"+'Maintenance: '+maintenance +"</h4>"+
-"<span class='label label-primary'>"+state+"<span class='badge'>"+duration+"</span>"+"</span>"+
-"</div>"+ 
-"<div class='text-center'><a href='' class='btn btn-primary' role='button'>Refresh</a> <a href='' </a></div>"+
-"</div>";
     console.log(element[2]);
     // infowindow.setContent(contentString);
     // infowindow.setPosition(event.latLng);
@@ -838,6 +782,7 @@ var panel = "<div class='panel panel-"+panel+"'>"+
    var al = "<div class='alert alert-danger' role='alert'>ALERT THE DEPARTMENT</div>";
 
     showSideWindow(pan2);
+
     $(document).ready(function (e) {
     var $worked = $("#maintenance");
 
@@ -852,16 +797,16 @@ var panel = "<div class='panel panel-"+panel+"'>"+
         var dt2 = new Date(dt.valueOf() + 1000);
         var temp = dt2.toTimeString().split(" ");
         var ts = temp[0].split(":");
-        
+                //console.log(ts);
         $worked.html(ts[1]+":"+ts[2]);
         setTimeout(update, 1000);
 
-        if(state == "INACTIVE" && myTime == "03:03"){
+        if(state == "UNAVAILABLE" && myTime == "03:03"){
 
     $(document).ready(function (e) {
     var $alertDiv = $("#alert");
     $alertDiv.removeClass('hidden');
-    $alertDiv.html("<h3>ALERT "+name+ " DEPARTMENT</h3>");
+    $alertDiv.html("<h4>ALERT "+name+ " Authority</h4>");
      //setTimeout($alertDiv.addClass('hidden'), 5000);
    // var intervalDiv = setInterval($alertDiv.addClass('hidden'), 1000); // Will alert every second.
 // clearInterval(intervalID); // Will clear the timer.
@@ -875,7 +820,58 @@ var panel = "<div class='panel panel-"+panel+"'>"+
     }
 
     setTimeout(update, 1000);
-});
+});//end of TIMER
+
+
+    $(document).ready(function (e) {
+    var $mess = $("#message");
+//console.log($mess.text());
+    function update() {
+        var myMessageQueue = $mess.html();
+        var dt = new Date();
+        dt.setHours(0);
+        dt.setMinutes(myMessageQueue);
+
+
+// var count = 50;
+// var timer = setInterval(function() {
+//     count -= Math.floor(Math.random()*3);
+//     if( count <= 0) {
+//         count = 0;
+//         clearInterval(timer);
+//     }
+//        $mess.html(ts[2]);
+//     console.log("countdown: "+count);
+// },10000);
+       var count = parseInt($mess.text());
+
+       // var dt2 = new Date(dt.valueOf() + 1000);
+       if(state == "AVAILABLE"){
+          count -= Math.floor(Math.random()*3)+1;
+       }
+       if(state == "UNAVAILABLE"){
+         //+num1 + +num2;
+          count += parseInt(Math.floor(Math.random()*3)+1);
+         // console.log(count);
+       }
+       if(state == "MAINTENANCE"){
+         count= 0;
+       }
+       
+            if( count <= 0) {
+        count = 0;
+    }
+        var temp = dt.toTimeString().split(" ");
+        var ts = temp[0].split(":");
+        //console.log()
+       $mess.html(count);
+    
+        setTimeout(update, 5000);
+    }
+
+    setTimeout(update, 1000);
+});//END OF MESSAGE QUEUE UPDATE
+
 
 });   
        element[0].setMap(map);
@@ -891,40 +887,42 @@ var panel = "<div class='panel panel-"+panel+"'>"+
 
 
 
-setInterval(function(){ 
-  var randomNum = Math.round(Math.random() * 9) + 1;
-  $('#cps').toggleClass('statusColour'); 
-    // $('#mag').toggleClass('statusColour'); 
-    $('.el').toggleClass('elem'); 
-    $(".el").html("INACTIVE"); 
-   setTimeout(function(){
-  $('#cps').toggleClass('statusColour'); 
-  // $('#mag').toggleClass('statusColour');  
-  // $("active").css("color", "#c7254e");
-  //  $("#inactive").css("color", "#c7254e");
-  //   $("active").addClass("hidden");
-  $(".el").html("ACTIVE"); 
-   $('.el').toggleClass('elem'); 
-   }, randomNum * 1000);
+// setInterval(function(){ 
+//   var randomNum = Math.round(Math.random() * 9) + 1;
+//   $('#cps').toggleClass('statusColour'); 
+//     // $('#mag').toggleClass('statusColour'); 
+//     $('.el').toggleClass('elem'); 
+//     $(".el").html("UNAVAILABLE"); 
+//    setTimeout(function(){
+//   $('#cps').toggleClass('statusColour'); 
+//   // $('#mag').toggleClass('statusColour');  
+//   // $("active").css("color", "#c7254e");
+//   //  $("#inactive").css("color", "#c7254e");
+//   //   $("active").addClass("hidden");
+//   $(".el").html("AVAILABLE"); 
+//    $('.el').toggleClass('elem'); 
+//    }, randomNum * 1000);
 
-},10000);
+// },10000);
 
-setInterval(function(){ 
-  var randomNumber = Math.round(Math.random() * 5) + 1;
+// setInterval(function(){ 
+//   var randomNumber = Math.round(Math.random() * 5) + 1;
 
-    $('#mag').toggleClass('statusColour'); 
-    $('.ma').toggleClass('elem'); 
-    $('.ma').html("INACTIVE"); 
-   setTimeout(function(){
-  $('#mag').toggleClass('statusColour');  
-  // $("active").css("color", "#c7254e");
-  //  $("#inactive").css("color", "#c7254e");
-  //   $("active").addClass("hidden");
-  $('.ma').html("ACTIVE"); 
-   $('.ma').toggleClass('elem'); 
-   }, randomNumber * 1000);
+//     $('#mag').toggleClass('statusColour'); 
+//     $('.ma').toggleClass('elem'); 
+//     $('.ma').html("UNAVAILABLE"); 
+//    setTimeout(function(){
+//   $('#mag').toggleClass('statusColour');  
+//   // $("active").css("color", "#c7254e");
+//   //  $("#inactive").css("color", "#c7254e");
+//   //   $("active").addClass("hidden");
+//   $('.ma').html("AVAILABLE"); 
+//    $('.ma').toggleClass('elem'); 
+//    }, randomNumber * 1000);
 
-},6000);
+// },6000);
+
+
  
    
     function showSideWindow(text) {
@@ -1158,7 +1156,7 @@ function randomColour(randomnumber){
  function setColour(col){
   return {
     strokeColor: 'yellow',
-    strokeWeight: 1.5,
+    strokeWeight: 1.3,
     fillColor: col,
     fillOpacity: 0.4
   }
