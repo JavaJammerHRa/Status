@@ -1,9 +1,6 @@
 /**
  * Created by hrasuli on 23/02/2017.
  */   
-     // var APIkey = "AIzaSyCDIMbudMJpS6eIvDWZRpKmPr5l4ISGRKQ" ;
-     //51.525654, -0.114662
-     //51.46 -2.79
     var map;
     var arrayOfPoly = [];
     var status;
@@ -243,213 +240,6 @@
 ]
   });
 
-// var myMapOptions  = [
-//   {
-//     elementType: 'geometry',
-//     stylers: [
-//       {
-//         color: '#212121'
-//       }
-//     ]
-//   },
-//   {
-//     elementType: 'labels.icon',
-//     stylers: [
-//       {
-//         visibility: 'off'
-//       }
-//     ]
-//   },
-//   {
-//     elementType: 'labels.text.fill',
-//     stylers: [
-//       {
-//         color: '#757575'
-//       }
-//     ]
-//   },
-//   {
-//     elementType: 'labels.text.stroke',
-//     stylers: [
-//       {
-//         color: '#212121'
-//       }
-//     ]
-//   },
-//   {
-//     featureType: 'administrative',
-//     elementType: 'geometry',
-//     stylers: [
-//       {
-//         color: '#757575'
-//       }
-//     ]
-//   },
-//   {
-//     featureType: 'administrative.country',
-//     elementType: 'labels.text.fill',
-//     stylers: [
-//       {
-//         color: '#9e9e9e'
-//       }
-//     ]
-//   },
-//   {
-//     featureType: 'administrative.locality',
-//     elementType: 'labels.text.fill',
-//     stylers: [
-//       {
-//         color: '#bdbdbd'
-//       }
-//     ]
-//   },
-//   {
-//     featureType: 'poi',
-//     elementType: 'labels.text.fill',
-//     stylers: [
-//       {
-//         color: '#757575'
-//       }
-//     ]
-//   },
-//   {
-//     featureType: 'poi.park',
-//     elementType: 'geometry',
-//     stylers: [
-//       {
-//         color: '#181818'
-//       }
-//     ]
-//   },
-//   {
-//     featureType: 'poi.park',
-//     elementType: 'labels.text.fill',
-//     stylers: [
-//       {
-//       color: '#616161'
-//       }
-//     ]
-//   },
-//   {
-//     featureType: 'poi.park',
-//     elementType: 'labels.text.stroke',
-//     stylers: [
-//       {
-//         color: '#1b1b1b'
-//       }
-//     ]
-//   },
-//   {
-//     featureType: 'road',
-//     elementType: 'geometry.fill',
-//     stylers: [
-//       {
-//         color: '#2c2c2c'
-//       }
-//     ]
-//   },
-//   {
-//     featureType: 'road',
-//     elementType: 'labels.text.fill',
-//     stylers: [
-//       {
-//         color: '#8a8a8a'
-//       }
-//     ]
-//   },
-//   {
-//     featureType: 'road.arterial',
-//     elementType: 'geometry',
-//     stylers: [
-//       {
-//         color: '#373737'
-//       }
-//     ]
-//   },
-//   {
-//     featureType: 'road.arterial',
-//     elementType: 'labels',
-//     stylers: [
-//       {
-//         visibility: 'off'
-//       }
-//     ]
-//   },
-//   {
-//     featureType: 'road.highway',
-//     elementType: 'geometry',
-//     stylers: [
-//       {
-//         color: '#3c3c3c'
-//       }
-//     ]
-//   },
-//   {
-//     featureType: 'road.highway',
-//     elementType: 'labels',
-//     stylers: [
-//       {
-//         visibility: 'off'
-//       }
-//     ]
-//   },
-//   {
-//     featureType: 'road.highway.controlled_access',
-//     elementType: 'geometry',
-//     stylers: [
-//       {
-//       color: '#4e4e4e'
-//       }
-//     ]
-//   },
-//   {
-//     featureType: 'road.local',
-//     stylers: [
-//       {
-//         visibility: 'off'
-//       }
-//     ]
-//   },
-//   {
-//     featureType: 'road.local',
-//     elementType: 'labels.text.fill',
-//     stylers: [
-//       {
-//         color: '#616161'
-//       }
-//     ]
-//   },
-//   {
-//     featureType: 'transit',
-//     elementType: 'labels.text.fill',
-//     stylers: [
-//       {
-//         color: '#757575'
-//       }
-//     ]
-//   },
-//   {
-//     featureType: 'water',
-//     elementType: 'geometry',
-//     stylers: [
-//       {
-//         color: '#000000'
-//       }
-//     ]
-//   },
-//   {
-//     featureType: 'water',
-//     elementType: 'labels.text.fill',
-//     stylers: [
-//       {
-//         color: '#3d3d3d'
-//       }
-//     ]
-//   }
-// ];
-
-
-// map.setOptions(myMapOptions);
 
 var avonsomerset = new google.maps.Data();
 var bedfordshire = new google.maps.Data();
@@ -543,7 +333,7 @@ wiltshire.loadGeoJson('http://localhost/status/data/wiltshire.geojson');
 
 
 arrayOfPoly.push(
-  [avonsomerset,"1","03:00","16/03/2017","13","avon-somerset.jpg"],
+  [avonsomerset,"1","03:00","25/03/2017","13","avon-somerset.jpg"],
   [bedfordshire,"1","03:00","25/03/2017","27","bedfordshire.jpg"],
   [devon,"1","02:22","26/03/2017","41","devon.jpg"],
   [dorset,"1","03:11","25/03/2017","33","dorset.jpg"],
@@ -555,7 +345,7 @@ arrayOfPoly.push(
   [cumbria,"1","03:00","25/03/2017","15","cumbria.png"],
   [derbyshire,"1","03:00","26/03/2017","15","derbyshire.png"],
   [durham,"1","03:00","25/03/2017","23","durham.jpg"],
-  [dyfedPowys,"0","03:00","13/03/2017","89","dyfed.jpg"],
+  [dyfedPowys,"0","03:00","17/03/2017","89","dyfed.jpg"],
   [essex,"1","03:00","25/03/2017","26","essex.jpg"],
   [gloucestershire,"1","03:00","25/03/2017","23","gloucestershire.gif"],
   [greaterManchester,"1","03:00","26/03/2017","23","manchester.png"],
@@ -567,7 +357,7 @@ arrayOfPoly.push(
   [leicestershire,"1","03:00","26/03/2017","23","leicestershire.jpg"],
   [lincolnshire,"1","03:00","25/03/2017","23","lincolnshire.jpg"],
   [merseyside,"1","03:00","25/03/2017","23","merseyside.jpg"],
-  [metropolitan,"1","03:00","14/03/2017","23","met.jpg"],
+  [metropolitan,"1","03:00","26/03/2017","23","met.jpg"],
   [norfolk,"1","03:00","25/03/2017","23","norfolk.png"],
   [northamptonshire,"1","03:00","/03/2017","23","northamptonshire.jpg"],
   [northernIreland,"1","03:00","25/03/2017","23","northernIreland.gif"],
@@ -581,7 +371,7 @@ arrayOfPoly.push(
   [suffolk,"1","03:00","25/03/2017","23","suffolk.jpg"],
   [surrey,"1","03:00","26/03/2017","23","surrey.png"],
   [sussex,"1","03:00","25/03/2017","23","sussex.jpg"],
-  [thamesValley,"0","03:00","16/03/2017","23","thamesvalley.jpg"],
+  [thamesValley,"0","03:00","25/03/2017","23","thamesvalley.jpg"],
   [warwickshire,"1","03:00","26/03/2017","23","warwickshire.jpg"],
   [westMercia,"1","03:00","25/03/2017","23","westmercia.jpg"],
   [westMidlands,"1","03:00","26/03/2017","23","westmidlands.jpg"],
@@ -764,15 +554,15 @@ if(state == "AVAILABLE"){
   messages = "0";
 }
 
-var pan2 = "<div class='text-center'>"+
+var pan2 = "<div>"+
 "<a href='#' class='list-group-item active'>"+
    "<h3>" +name+"</h3></a></div>"+
 
 "   <a href='#' class='thumbnail logo center-block'> <img  style='height: 200px; width: 200px; display: block;'" +
   "src='logo/"+image+"' data-holder-rendered='true'> </a>"+
-  "<a href='#' class='list-group-item list-group-item-"+statusColour+"'><h4>"+state+":  <span class='badge' id='maintenance'>"+duration+"</span></h4></a>"+
-  "<a href='#' class='list-group-item list-group-item-info'><h4>Message Queue:  <span class='badge' id='message'>"+messages+"</span></h4></a>"+
-  "<a href='#' class='list-group-item list-group-item-warning'><h4>Maintenance:  <span class='badge'>"+maintenance+"</span></h4></a>"
+  "<a href='#' class='list-group-item list-group-item-"+statusColour+"'><h4 class='text-left'>"+state+":  <span class='badge' id='maintenance'>"+duration+"</span></h4></a>"+
+  "<a href='#' class='list-group-item list-group-item-info'><h4 class='text-left'>Message Queue:  <span class='badge' id='message'>"+messages+"</span></h4></a>"+
+  "<a href='#' class='list-group-item list-group-item-warning'><h4 class='text-left'>Maintenance:  <span class='badge'>"+maintenance+"</span></h4></a>"
 ;
     console.log(element[2]);
     // infowindow.setContent(contentString);
@@ -938,7 +728,7 @@ var pan2 = "<div class='text-center'>"+
   var centerControlDiv10 = document.createElement('div');
   var centerControlDiv9 = document.createElement('div');
   var centerControlDiv8 = document.createElement('div');
-    var resetControlDiv = document.createElement('div');
+  var resetControlDiv = document.createElement('div');
   
   var colourDiv1 = document.createElement('div');
   var colourDiv2 = document.createElement('div');
@@ -960,24 +750,23 @@ var pan2 = "<div class='text-center'>"+
   var colour8 = new colourGrade(colourDiv1, map,"#E05E52");
   var colour9 = new colourGrade(colourDiv1, map,"#EA8E86");
   var colour10 = new colourGrade(colourDiv1, map,"#F3BEBA");
-  map.controls[google.maps.ControlPosition.TOP_RIGHT].push(colourDiv1);
-   map.controls[google.maps.ControlPosition.TOP_RIGHT].push(colourDiv2);
-    map.controls[google.maps.ControlPosition.TOP_RIGHT].push(colourDiv3);
-     map.controls[google.maps.ControlPosition.TOP_RIGHT].push(colourDiv4);
-      map.controls[google.maps.ControlPosition.TOP_RIGHT].push(colourDiv5);
-       map.controls[google.maps.ControlPosition.TOP_RIGHT].push(colourDiv6);
-        map.controls[google.maps.ControlPosition.TOP_RIGHT].push(colourDiv7);
-         map.controls[google.maps.ControlPosition.TOP_RIGHT].push(colourDiv8);
-          map.controls[google.maps.ControlPosition.TOP_RIGHT].push(colourDiv9);
-           map.controls[google.maps.ControlPosition.TOP_RIGHT].push(colourDiv10);
+  map.controls[google.maps.ControlPosition.RIGHT_CENTER].push(colourDiv1);
+   map.controls[google.maps.ControlPosition.RIGHT_CENTER].push(colourDiv2);
+     map.controls[google.maps.ControlPosition.RIGHT_CENTER].push(colourDiv4);
+      map.controls[google.maps.ControlPosition.RIGHT_CENTER].push(colourDiv5);
+       map.controls[google.maps.ControlPosition.RIGHT_CENTER].push(colourDiv6);
+        map.controls[google.maps.ControlPosition.RIGHT_CENTER].push(colourDiv7);
+         map.controls[google.maps.ControlPosition.RIGHT_CENTER].push(colourDiv8);
+          map.controls[google.maps.ControlPosition.RIGHT_CENTER].push(colourDiv9);
+           map.controls[google.maps.ControlPosition.RIGHT_CENTER].push(colourDiv10);
 
-  var centerControl14 = new CenterControl(centerControlDiv14, map,"14/03");
-  var centerControl13 = new CenterControl(centerControlDiv13, map,"13/03");
-  var centerControl12 = new CenterControl(centerControlDiv12, map,"12/03");
-  var centerControl11 = new CenterControl(centerControlDiv11, map,"11/03");
-  var centerControl10 = new CenterControl(centerControlDiv10, map,"10/03");
-  var centerControl9 = new CenterControl(centerControlDiv9, map,"09/03");
-  var centerControl8 = new CenterControl(centerControlDiv8, map,"08/03");
+  var centerControl14 = new CenterControl(centerControlDiv14, map,"14th");
+  var centerControl13 = new CenterControl(centerControlDiv13, map,"13th");
+  var centerControl12 = new CenterControl(centerControlDiv12, map,"12th");
+  var centerControl11 = new CenterControl(centerControlDiv11, map,"11th");
+  var centerControl10 = new CenterControl(centerControlDiv10, map,"10th");
+  var centerControl9 = new CenterControl(centerControlDiv9, map,"09th");
+  var centerControl8 = new CenterControl(centerControlDiv8, map,"08th");
   var resetControl = new ResetControl(resetControlDiv, map,"REFRESH");
 
 
@@ -991,37 +780,34 @@ var pan2 = "<div class='text-center'>"+
   map.controls[google.maps.ControlPosition.BOTTOM_LEFT].push(resetControlDiv);
     }
 
-var chicago = {lat: 41.85, lng: -87.65};
-
 /**
- * The CenterControl adds a control to the map that recenters the map on
- * Chicago.
- * This constructor takes the control DIV as an argument.
+ * This constructor takes the control DIV as an argument and the date.
  * @constructor
  */
 function CenterControl(controlDiv, map, date) {
 
   // Set CSS for the control border.
   var controlUI = document.createElement('div');
-  controlUI.style.height = "25px";
-  controlUI.style.width = "50px";
+ // controlUI.style.height = "20px";
+  //controlUI.style.width = "50px";
 
-  controlUI.style.backgroundColor = '#fff';
-  controlUI.style.border = '2px solid ';
-  //controlUI.style.borderRadius = '5px';
- // controlUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
+  controlUI.style.backgroundColor = '#4266f5';
+
+  controlUI.style.borderRadius = '2px';
+  controlUI.style.boxShadow = '0 2px 3px #181818)';
   controlUI.style.cursor = 'pointer';
   controlUI.style.padding = "2px";
   controlUI.style.marginBottom = '15px';
-  controlUI.style.marginRight = '0px';
+  controlUI.style.marginRight = '5px';
   controlUI.style.textAlign = 'center';
   controlUI.title = 'Historical Activity Data';
   controlDiv.appendChild(controlUI);
 
 
+
   // Set CSS for the control interior.
   var controlText = document.createElement('div');
-  controlText.style.color = 'rgb(25,25,25)';
+  controlText.style.color = '#fff';
   controlText.style.fontFamily = 'Roboto,Arial,sans-serif';
   controlText.style.fontSize = '12px';
   controlText.style.paddingLeft = '5px';
@@ -1033,10 +819,10 @@ function CenterControl(controlDiv, map, date) {
   controlUI.addEventListener('click', function() {
 
     arrayOfPoly.forEach(function(element) {
-          var randomN = Math.round(Math.random() * 9) + 1;
+          var randomN = Math.round(Math.random() * 3) + 1;
     var colour = randomColour(randomN);
       element[0].setMap(null);
-      console.log(randomN);
+      //console.log(randomN);
         element[0].setStyle(setColourCal(colour));
         element[0].setMap(map);
 
@@ -1046,16 +832,12 @@ function CenterControl(controlDiv, map, date) {
 
   controlUI.addEventListener('mouseover', function() {
   //controlUI.style.backgroundColor = '#dff0d8';
-    controlUI.style.borderBottomColor = "rgb(255, 235, 59)";
-    controlUI.style.backgroundColor = '#368bcc';
-    controlUI.style.borderBottomWidth = "3px";
-    controlUI.style.borderRadius = "3px";
+    controlUI.style.backgroundColor = '#3DCC00';
   controlDiv.appendChild(controlUI);
 });
 
   controlUI.addEventListener('mouseout', function() {
-  controlUI.style.backgroundColor = '#fff';
-   controlUI.style.borderBottomWidth = "0px";
+  controlUI.style.backgroundColor = '#4266f5';
   controlDiv.appendChild(controlUI);
   });
 }
@@ -1081,27 +863,25 @@ function colourGrade(controlDiv, map, colour) {
 function ResetControl(controlDiv, map, text) {
 
   var keyUI = document.createElement('div');
-  // keyUI.style.height = "0px";
+   keyUI.style.height = "30px";
   // keyUI.style.width = "20px";
   keyUI.style.boxShadow = " 0 2px 3px #181818";
-   keyUI.style.borderRadius = "5px";
-  keyUI.style.backgroundColor = "#2C85F2";
+   keyUI.style.borderRadius = "2px";
+  keyUI.style.backgroundColor = "#4266f5";
   keyUI.style.cursor = 'pointer';
   keyUI.style.marginBottom = '15px';
-  keyUI.style.marginRight = '10px';
+  keyUI.style.marginLeft = '10px';
   keyUI.style.textAlign = 'center';
   keyUI.title = 'reload map';
   controlDiv.appendChild(keyUI);
-  
-  // Set CSS for the control border.
 
 
   // Set CSS for the control interior.
   var controlText = document.createElement('div');
-  controlText.style.color = 'rgb(25,25,25)';
-  controlText.style.fontFamily = 'Roboto,Arial,sans-serif';
+  controlText.style.color = '#fff';
+  //controlText.style.fontFamily = 'Roboto,Arial,sans-serif';
   controlText.style.fontSize = '14px';
-  controlText.style.lineHeight = '38px';
+  controlText.style.lineHeight = '30px';
   controlText.style.paddingLeft = '5px';
   controlText.style.paddingRight = '5px';
   controlText.innerHTML = text;
@@ -1116,6 +896,15 @@ function ResetControl(controlDiv, map, text) {
     
   });
 
+  keyUI.addEventListener('mouseover', function() {
+      keyUI.style.backgroundColor = "#3DCC00";
+      controlDiv.appendChild(keyUI);
+  });
+
+    keyUI.addEventListener('mouseout', function() {
+  keyUI.style.backgroundColor = "#4266f5";
+  controlDiv.appendChild(keyUI);
+  });
 }
 
 function randomColour(randomnumber){
