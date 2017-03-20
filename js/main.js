@@ -268,7 +268,7 @@ var merseyside = new google.maps.Data();
 var metropolitan = new google.maps.Data();
 var norfolk = new google.maps.Data();
 var northamptonshire = new google.maps.Data();
-var northernIreland = new google.maps.Data();
+//var northernIreland = new google.maps.Data();
 var northumbria = new google.maps.Data();
 var northWales = new google.maps.Data();
 var northYorkshire = new google.maps.Data();
@@ -313,7 +313,7 @@ merseyside.loadGeoJson('http://localhost/status/data/merseyside.geojson');
 metropolitan.loadGeoJson('http://localhost/status/data/metropolitan.geojson');
 norfolk.loadGeoJson('http://localhost/status/data/norfolk.geojson');
 northamptonshire.loadGeoJson('http://localhost/status/data/northamptonshire.geojson');
-northernIreland.loadGeoJson('http://localhost/status/data/northern-ireland.geojson');
+//northernIreland.loadGeoJson('http://localhost/status/data/northern-ireland.geojson');
 northumbria.loadGeoJson('http://localhost/status/data/northumbria.geojson');
 northWales.loadGeoJson('http://localhost/status/data/north-wales.geojson');
 northYorkshire.loadGeoJson('http://localhost/status/data/north-yorkshire.geojson');
@@ -333,7 +333,7 @@ wiltshire.loadGeoJson('http://localhost/status/data/wiltshire.geojson');
 
 
 arrayOfPoly.push(
-  [avonsomerset,"1","03:00","25/03/2017","13","avon-somerset.jpg"],
+  [avonsomerset,"1","03:00","20/03/2017","13","avon-somerset.jpg"],
   [bedfordshire,"1","03:00","25/03/2017","27","bedfordshire.jpg"],
   [devon,"1","02:22","26/03/2017","41","devon.jpg"],
   [dorset,"1","03:11","25/03/2017","33","dorset.jpg"],
@@ -360,7 +360,6 @@ arrayOfPoly.push(
   [metropolitan,"1","03:00","26/03/2017","23","met.jpg"],
   [norfolk,"1","03:00","25/03/2017","23","norfolk.png"],
   [northamptonshire,"1","03:00","/03/2017","23","northamptonshire.jpg"],
-  [northernIreland,"1","03:00","25/03/2017","23","northernIreland.gif"],
   [northumbria,"1","03:00","26/03/2017","23","northumbria.png"],
   [northWales,"1","03:00","25/03/2017","23","northwales.png"],
   [northYorkshire,"1","03:00","26/03/2017","23","northYorkshire.png"],
@@ -378,7 +377,7 @@ arrayOfPoly.push(
   [westYorkshire,"1","03:00","25/03/2017","23","westyorkshire.jpg"],
   [wiltshire,"1","03:00","25/03/2017","23","wiltshire.jpg"]);
 
-
+// 43 police Authorities in the UK.
 
 
  var setColourStyle = function(event){
@@ -740,16 +739,16 @@ var pan2 = "<div>"+
   var colourDiv8 = document.createElement('div');
   var colourDiv9 = document.createElement('div');
   var colourDiv10 = document.createElement('div');
-  var colour1 = new colourGrade(colourDiv1, map,"#57150F");
-  var colour2 = new colourGrade(colourDiv1, map,"#791E15");
-  var colour3 = new colourGrade(colourDiv1, map,"#8B2218");
-  var colour4 = new colourGrade(colourDiv1, map,"#9C261C");
-  var colour5 = new colourGrade(colourDiv1, map,"#AD2B1F");
-  var colour6 = new colourGrade(colourDiv1, map,"#BF2F22");
-  var colour7 = new colourGrade(colourDiv1, map,"#DA3D2F");
-  var colour8 = new colourGrade(colourDiv1, map,"#E05E52");
-  var colour9 = new colourGrade(colourDiv1, map,"#EA8E86");
-  var colour10 = new colourGrade(colourDiv1, map,"#F3BEBA");
+  var colour1 = new colourGrade(colourDiv1, map,"#005213");
+  var colour2 = new colourGrade(colourDiv1, map,"#006618");
+  var colour3 = new colourGrade(colourDiv1, map,"#007A1D");
+  var colour4 = new colourGrade(colourDiv1, map,"#008F21");
+  var colour5 = new colourGrade(colourDiv1, map,"#00A326");
+  var colour6 = new colourGrade(colourDiv1, map,"#00B82B");
+  var colour7 = new colourGrade(colourDiv1, map,"#00CC30");
+  var colour8 = new colourGrade(colourDiv1, map,"#00E034");
+  var colour9 = new colourGrade(colourDiv1, map,"#00F539");
+  var colour10 = new colourGrade(colourDiv1, map,"#70FF92");
   map.controls[google.maps.ControlPosition.RIGHT_CENTER].push(colourDiv1);
    map.controls[google.maps.ControlPosition.RIGHT_CENTER].push(colourDiv2);
      map.controls[google.maps.ControlPosition.RIGHT_CENTER].push(colourDiv4);
@@ -819,7 +818,7 @@ function CenterControl(controlDiv, map, date) {
   controlUI.addEventListener('click', function() {
 
     arrayOfPoly.forEach(function(element) {
-          var randomN = Math.round(Math.random() * 3) + 1;
+          var randomN = Math.round(Math.random() * 9) + 1;
     var colour = randomColour(randomN);
       element[0].setMap(null);
       //console.log(randomN);
@@ -911,34 +910,34 @@ function randomColour(randomnumber){
       var colour;
     switch(randomnumber){
       case 1:
-      colour = "#F3BEBA";
+      colour = "#70FF92";
         break;
       case 2:
-      colour = "#EA8E86";
+      colour = "#00F539";
         break;
       case 3:
-      colour = "#E05E52";
+      colour = "#00E034";
         break;
       case 4:
-      colour = "#DA3D2F";
+      colour = "#00CC30";
         break;
       case 5:
-      colour = "#BF2F22";
+      colour = "#00B82B";
         break;
       case 6:
-      colour = "#AD2B1F";
+      colour = "#00A326";
             break;
       case 7:
-      colour = "#9C261C";
+      colour = "#008F21";
             break;
       case 8:
-      colour = "#8B2218";
+      colour = "#007A1D";
             break;
       case 9:
-      colour = "#791E15";
+      colour = "#006618";
             break;
       case 10:
-      colour = "#57150F";
+      colour = "#005213";
     }
     return colour;
 }
